@@ -1,0 +1,18 @@
+.about-card {
+    margin: 30px 25vw;
+    text-align: center;
+}
+
+i {
+    margin: auto;
+
+}
+
+a {
+    color: #3f51b5;
+}
+
+#card-content {
+    box-shadow: 0 0.5px 0 #bababa; 
+    padding-bottom: 50px;
+}

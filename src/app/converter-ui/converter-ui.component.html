@@ -1,0 +1,30 @@
+<div class="converter-ui-container">
+
+    <form [formGroup]="parentForm" (ngSubmit)="onSubmit()">
+        <!-- <pre>{{parentForm.value | json}}</pre> -->
+        <mat-grid-list cols="3" rowHeight="2:1">
+            <mat-grid-tile>
+                <app-category [parentForm]="parentForm"></app-category>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <app-category-icon [parentForm]="parentForm"></app-category-icon>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <app-converter [parentForm]="parentForm"></app-converter>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <app-conversion-input [parentForm]="parentForm"></app-conversion-input>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <app-conversion-output [parentForm]="parentForm"></app-conversion-output>
+
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form> 
+</div>
